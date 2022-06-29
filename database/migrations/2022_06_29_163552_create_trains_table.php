@@ -23,6 +23,7 @@ class CreateTrainsTable extends Migration
             $table->tinyInteger('train_carriages')->unsigned();
             $table->boolean('in_time')->default(true);
             $table->boolean('deleted')->default(false);
+            $table->timestamps();
         });
     }
 
